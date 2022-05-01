@@ -1,0 +1,1139 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Sun May  1 17:45:15 2022
+# Process ID: 19130
+# Current directory: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1
+# Command line: vivado -log design_1_dpuczdx8g_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dpuczdx8g_0_0.tcl
+# Log file: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/design_1_dpuczdx8g_0_0.vds
+# Journal file: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/vivado.jou
+# Running On: h, OS: Linux, CPU Frequency: 3815.218 MHz, CPU Physical cores: 4, Host memory: 16672 MB
+#-----------------------------------------------------------
+source design_1_dpuczdx8g_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2857.406 ; gain = 0.023 ; free physical = 3619 ; free virtual = 7574
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/y/ultra96/dpu/Vitis-AI'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:ISPPipeline_accel:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:hdmi_acr_ctrl:1.1'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:dpu_top:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u55c_xo_withdwc/DPUCAHX8H_SRC/DPU' will take precedence over the same IP in locations: 
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo_withdwc/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo_withdwc/DPUCAHX8H_SRC/DPU
+Command: synth_design -top design_1_dpuczdx8g_0_0 -part xczu3eg-sbva484-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19378
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:42 . Memory (MB): peak = 3026.203 ; gain = 141.797 ; free physical = 747 ; free virtual = 2101
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_dpuczdx8g_0_0' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/synth/design_1_dpuczdx8g_0_0.sv:62]
+INFO: [Synth 8-6157] synthesizing module 'DSP48E2' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:26711]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E2' (14#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:26711]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105999]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (51#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105999]
+INFO: [Synth 8-6157] synthesizing module 'DSP48E2__parameterized0' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:26711]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E2__parameterized0' (61#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:26711]
+INFO: [Synth 8-6157] synthesizing module 'DSP48E2__parameterized1' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:26711]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E2__parameterized1' (80#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:26711]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dpuczdx8g_0_0' (107#1) [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/synth/design_1_dpuczdx8g_0_0.sv:62]
+WARNING: [Synth 8-7129] Port s_6804fa10[31] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[30] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[29] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[28] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[27] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[26] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[25] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[24] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[23] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[22] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[21] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[20] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[19] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[18] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[17] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[16] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[15] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[14] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[13] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[12] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[11] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[10] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[9] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[8] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[7] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[6] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[5] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[4] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[3] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[2] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[1] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_6804fa10[0] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[31] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[30] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[29] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[28] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[27] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[26] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[25] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[24] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[23] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[22] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[21] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[20] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[19] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[18] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[17] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[16] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[15] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[14] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[13] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[12] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[11] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[10] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[9] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[8] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[7] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[6] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[5] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[4] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[3] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[2] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[1] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_1ebd65ca[0] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[31] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[30] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[29] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[28] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[27] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[26] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[25] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[24] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[23] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[22] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[21] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[20] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[19] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[18] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[17] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[16] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[15] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[14] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[13] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[12] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[11] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[10] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[9] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[8] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[7] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[6] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[5] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[4] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[3] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[2] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[1] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_c8c48dfd[0] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_e046025d[31] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_e046025d[30] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_e046025d[29] in module m_a04a3fc5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_e046025d[28] in module m_a04a3fc5 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:01:14 . Memory (MB): peak = 3524.758 ; gain = 640.352 ; free physical = 935 ; free virtual = 2749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:25 . Memory (MB): peak = 3542.570 ; gain = 658.164 ; free physical = 4418 ; free virtual = 6040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:25 . Memory (MB): peak = 3542.570 ; gain = 658.164 ; free physical = 4419 ; free virtual = 6041
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3561.414 ; gain = 0.000 ; free physical = 9140 ; free virtual = 10896
+INFO: [Netlist 29-17] Analyzing 325 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc] for cell 'inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports dpu_2x_clk]'. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:21]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:21]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports m_axi_dpu_aclk]'. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:22]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:22]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "clk_1x_period": no such variable
+ [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:31]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "clk_2x_max_delay": no such variable
+ [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:32]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports s_axi_aclk]'. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:38]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc:38]
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc] for cell 'inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_dpuczdx8g_0_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_dpuczdx8g_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_dpuczdx8g_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4328.586 ; gain = 0.000 ; free physical = 7660 ; free virtual = 9694
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 325 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 325 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.67 . Memory (MB): peak = 4336.523 ; gain = 7.938 ; free physical = 8204 ; free virtual = 10239
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:31 ; elapsed = 00:01:59 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 9064 ; free virtual = 11133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:31 ; elapsed = 00:01:59 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 9062 ; free virtual = 11130
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/dont_touch.xdc, line 24).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:59 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 9063 ; free virtual = 11132
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 's_5d82585c_reg' in module 'm_b62a0851'
+INFO: [Synth 8-802] inferred FSM for state register 's_02c48146_reg' in module 'm_db1e9a63'
+INFO: [Synth 8-802] inferred FSM for state register 's_65c48440_reg' in module 'm_a5eedee3'
+INFO: [Synth 8-802] inferred FSM for state register 's_41366138_reg' in module 'm_0e4a1682'
+INFO: [Synth 8-802] inferred FSM for state register 'g_3857df34[0].s_251be8de_reg' in module 'm_ce41d30d'
+INFO: [Synth 8-802] inferred FSM for state register 'g_3857df34[1].s_251be8de_reg' in module 'm_ce41d30d'
+INFO: [Synth 8-802] inferred FSM for state register 'g_296cb0f2[0].s_9f59eaa9_reg' in module 'm_dc40f8ad'
+INFO: [Synth 8-802] inferred FSM for state register 'g_296cb0f2[1].s_9f59eaa9_reg' in module 'm_dc40f8ad'
+INFO: [Synth 8-802] inferred FSM for state register 'g_9ca938af[0].s_571daada_reg' in module 'm_2d86552c'
+INFO: [Synth 8-802] inferred FSM for state register 's_267d8ebc_reg' in module 'm_f95b54e3'
+INFO: [Synth 8-802] inferred FSM for state register 's_41d56574_reg' in module 'm_373d0c0a'
+INFO: [Synth 8-802] inferred FSM for state register 's_105e8a50_reg' in module 'm_d877b5ed'
+INFO: [Synth 8-802] inferred FSM for state register 's_df813253_reg' in module 'm_8901b3e3'
+INFO: [Synth 8-802] inferred FSM for state register 's_35dbcd46_reg' in module 'm_8901b3e3'
+INFO: [Synth 8-802] inferred FSM for state register 's_93cd4f21_reg' in module 'm_6aa0af12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                   S_CFG |                               01 |                               01
+                  S_WORK |                               10 |                               10
+                  S_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_5d82585c_reg' using encoding 'sequential' in module 'm_b62a0851'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                   S_PRE |                               01 |                               01
+                 S_FETCH |                               10 |                               10
+                  S_SEND |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_02c48146_reg' using encoding 'sequential' in module 'm_db1e9a63'
+INFO: [Synth 8-6904] The RAM "m_8188199f:/s_4aff7124_reg" of size (depth=16 x width=4) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              000
+                 S_FETCH |                             0010 |                              001
+                   S_DPD |                             0100 |                              010
+                  S_SEND |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_65c48440_reg' using encoding 'one-hot' in module 'm_a5eedee3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00001 |                              000
+                 S_FETCH |                            00010 |                              001
+                   S_DPD |                            00100 |                              010
+                  S_SEND |                            01000 |                              011
+                  S_EXEC |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_41366138_reg' using encoding 'one-hot' in module 'm_0e4a1682'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+                   S_CFG |                              001 |                              001
+                 S_PARSE |                              010 |                              010
+                  S_SEND |                              011 |                              011
+                  S_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'g_3857df34[1].s_251be8de_reg' using encoding 'sequential' in module 'm_ce41d30d'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+                   S_CFG |                              001 |                              001
+                 S_PARSE |                              010 |                              010
+                  S_SEND |                              011 |                              011
+                  S_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'g_3857df34[0].s_251be8de_reg' using encoding 'sequential' in module 'm_ce41d30d'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                               00
+          ST_MODE0_TRANS |                               01 |                               01
+          ST_MODE1_TRANS |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'g_296cb0f2[1].s_9f59eaa9_reg' using encoding 'sequential' in module 'm_dc40f8ad'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                               00
+          ST_MODE0_TRANS |                               01 |                               01
+          ST_MODE1_TRANS |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'g_296cb0f2[0].s_9f59eaa9_reg' using encoding 'sequential' in module 'm_dc40f8ad'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                                0 |                             0000
+               ST_TRANS0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'g_9ca938af[0].s_571daada_reg' using encoding 'sequential' in module 'm_2d86552c'
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_f139104f__parameterized10:/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_f139104f__parameterized10:/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_f139104f__parameterized10:/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_f139104f__parameterized10:/s_f5bc20bd_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                   S_CFG |                               01 |                               01
+                  S_RECV |                               10 |                               10
+                  S_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_267d8ebc_reg' using encoding 'sequential' in module 'm_f95b54e3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                STS_IDLE |                              000 |                              000
+                STS_CONF |                              001 |                              001
+                STS_WAIT |                              010 |                              010
+                STS_SYNC |                              011 |                              011
+                STS_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_41d56574_reg' using encoding 'sequential' in module 'm_373d0c0a'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               STAT_IDLE |                            00001 |                              000
+               STAT_CONF |                            00010 |                              001
+              STAT_DELAY |                            00100 |                              010
+               STAT_WORK |                            01000 |                              011
+               STAT_DONE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_105e8a50_reg' using encoding 'one-hot' in module 'm_d877b5ed'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STAT_INIT0 |                          0000001 |                              000
+              STAT_INIT1 |                          0000010 |                              001
+              STAT_INIT2 |                          0000100 |                              010
+              STAT_INIT3 |                          0001000 |                              011
+              STAT_INIT4 |                          0010000 |                              100
+             STAT_ASSIGN |                          0100000 |                              110
+              STAT_DELAY |                          1000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_35dbcd46_reg' using encoding 'one-hot' in module 'm_8901b3e3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE0 |                               01 |                               10
+                 iSTATE2 |                               10 |                               11
+                  iSTATE |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_df813253_reg' using encoding 'sequential' in module 'm_8901b3e3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                         00000001 |                              000
+                  RD_CMD |                         10000000 |                              001
+                RD_DELAY |                         01000000 |                              111
+                 RD_DATA |                         00100000 |                              010
+                  WR_CMD |                         00010000 |                              011
+                 WR_DATA |                         00001000 |                              100
+                 WR_RESP |                         00000010 |                              110
+                  iSTATE |                         00000100 |                              101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_93cd4f21_reg' using encoding 'one-hot' in module 'm_6aa0af12'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:02 ; elapsed = 00:02:34 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 3070 ; free virtual = 5282
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[5].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[6].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[7].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[2].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[3].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[5].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[6].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[7].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[2].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[3].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[5].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[6].u_dbb243ff'
+INFO: [Synth 8-223] decloning instance 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff' (m_99922817__parameterized0) to 'inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[7].u_dbb243ff'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design m_2d86552c__GB0 has port g_9ca938af[0].s_6284b2e0 driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[1].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[1].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[1].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[1].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[1].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[0] )
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[6]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[6]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[6]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[6]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[6]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[5]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[5]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[5]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[5]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[5]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[4]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[4]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[4]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[4]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[4]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[3]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[3]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[3]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[3]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[3]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[2]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[2]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[2]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[2]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[2]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[1]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[1]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[1]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[1]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[1]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[0]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[0]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[0]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[0]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[0]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[7]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[13]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[12]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[13]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[12]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[10]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[12]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[11]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[10]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[11]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[10]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[10]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[9]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[8]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[9]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_f1ea9bed_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_61a31f08_reg[14]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[14]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_1c4a784c_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[14]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[8]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[14]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_5d1fd416_reg[14]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[8]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[15]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[20]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[23]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[20]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[16]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[20]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[16]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[20]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[22]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[20]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[23]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[19]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[23]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[19]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_702790bc_reg[16]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[19]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_358f602a_reg[16]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[19]' (FD) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/g_c5211017.s_26a1b548_reg[22]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[19]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_57f280de_reg[23]'
+INFO: [Synth 8-3886] merging instance 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[18]' (FDS) to 'g_9ca938af[1].g_4da76ddc.m_ce79d51d/s_00bce044_reg[23]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_5060603e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design m_2d86552c__GB1 has port s_fb056b95[0] driven by constant 0
+WARNING: [Synth 8-3917] design m_2d86552c__GB1 has port O16[0] driven by constant 1
+WARNING: [Synth 8-3917] design m_2d86552c__GB1 has port s_aee72b33[0] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[0].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[0].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[0].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[0].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[0].g_4da76ddc.m_ce79d51d /\s_f1060db3_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[0].s_229d904c_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_9ca938af[1].s_571daada_reg[1] )
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[0].g_e3c5226b[0].s_93b45dc9_reg[0][0:0]' into 'g_d9b88f41[0].u_1ace7546/s_d1aad10b_reg[0:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:260]
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_4626a528[0] driven by constant 1
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_b25284c1[0] driven by constant 1
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[95] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[94] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[93] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[92] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[91] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[90] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[89] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[88] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[87] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[86] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[85] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[84] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[83] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[82] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[81] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[80] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[79] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[78] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[77] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[76] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[75] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[74] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[73] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[72] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[71] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[70] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[69] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[68] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[67] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[66] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[65] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[64] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[63] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[62] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[61] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[60] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[59] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[58] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[57] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[56] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[55] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[54] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[53] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[52] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[51] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[50] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[49] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[48] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[47] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[46] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[45] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[44] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[43] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[42] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[41] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[40] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[39] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[38] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[37] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[36] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[35] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[34] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[33] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[32] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[31] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[30] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[29] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[28] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[27] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[26] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[25] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[24] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[23] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[22] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[21] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[20] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[19] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[18] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[17] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[16] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[15] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[14] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[13] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[12] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[11] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[10] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[9] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[8] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[7] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[6] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[5] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[4] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[3] driven by constant 0
+WARNING: [Synth 8-3917] design m_b0b949f9__GB0 has port s_cd5a39f1[2] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[1].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[1].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[1].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[1].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[2].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[2].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[2].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[2].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[3].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[3].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[3].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[3].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[4].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[4].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[4].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[4].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[5].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[5].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[5].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[5].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[6].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[6].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[6].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[6].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[7].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[7].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[7].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[7].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[8].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[8].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[8].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[8].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[9].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[9].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[9].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[9].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[10].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[10].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[10].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[10].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[11].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[11].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[11].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[11].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[12].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[12].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[12].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[12].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[13].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[13].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[13].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[13].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[14].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[14].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[14].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[14].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[15].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[15].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[15].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[15].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[16].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[16].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[16].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[16].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[17].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[17].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[17].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[17].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[18].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[18].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[18].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[18].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[19].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[19].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[19].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[19].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[20].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[20].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[20].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[20].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[21].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[21].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[21].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[21].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[22].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[22].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[22].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[22].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[23].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[23].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[23].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_22decd5e/g_510e4be4[23].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[0].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[0].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[0].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[0].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[1].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[1].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[1].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[1].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[2].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[2].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[2].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[2].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[3].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[3].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[3].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[3].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[4].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[4].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[4].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[4].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[5].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[5].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[5].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[5].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[6].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[6].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[6].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[6].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[7].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[7].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[7].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[7].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[8].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[8].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[8].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[8].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[9].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[9].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[9].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[9].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[10].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[10].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[10].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[10].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[11].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[11].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[11].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[11].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[12].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[12].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[12].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_34222f10/g_81988f4f[12].u_1c389048/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_517ce834/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 36 for RAM "m_b0b949f9__GB0/u_73393020/u_517ce834/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "m_b0b949f9__GB0/u_73393020/u_517ce834/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 6 for RAM "m_b0b949f9__GB0/u_73393020/u_517ce834/g_510e4be4[0].u_c5887571/s_f5bc20bd_reg"
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_9288e52b/\g_259ddc66[1].u_46c34312 /\g_9cbcfab9[0].g_3af0966c.s_2023b7f0_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_9288e52b/\g_259ddc66[0].u_46c34312 /\g_9cbcfab9[0].g_3af0966c.s_2023b7f0_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_f380e24b/\g_259ddc66[3].u_46c34312 /\g_9cbcfab9[0].g_3af0966c.s_2023b7f0_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_f380e24b/\g_259ddc66[2].u_46c34312 /\g_9cbcfab9[0].g_3af0966c.s_2023b7f0_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_f380e24b/\g_259ddc66[1].u_46c34312 /\g_9cbcfab9[0].g_3af0966c.s_2023b7f0_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_f380e24b/\g_259ddc66[0].u_46c34312 /\g_9cbcfab9[0].g_3af0966c.s_2023b7f0_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_597d738e/g_259ddc66[1].u_46c34312/g_0135928a.u_67577768/g_1d351732.s_30bd8878_reg[107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_597d738e/g_259ddc66[1].u_46c34312/g_0135928a.u_67577768/g_1d351732.s_30bd8878_reg[108] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_9288e52b/\g_259ddc66[1].u_46c34312 /\g_0135928a.u_67577768/g_1d351732.s_30bd8878_reg[107] )
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[1].g_6985081c.s_8f1b52ad_reg[1][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[2].g_6985081c.s_8f1b52ad_reg[2][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[3].g_6985081c.s_8f1b52ad_reg[3][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[4].g_6985081c.s_8f1b52ad_reg[4][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[5].g_6985081c.s_8f1b52ad_reg[5][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[6].g_6985081c.s_8f1b52ad_reg[6][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[7].g_6985081c.s_8f1b52ad_reg[7][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[1].g_6985081c.s_8f1b52ad_reg[1][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[2].g_6985081c.s_8f1b52ad_reg[2][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[3].g_6985081c.s_8f1b52ad_reg[3][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[4].g_6985081c.s_8f1b52ad_reg[4][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[5].g_6985081c.s_8f1b52ad_reg[5][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[6].g_6985081c.s_8f1b52ad_reg[6][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_4b99ad80[7].g_6985081c.s_8f1b52ad_reg[7][2:0]' into 'g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:553]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[1][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[2][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[3][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[4][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[5][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[6][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[7][10:0]' into 'g_d9b88f41[2].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[1][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[2][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[3][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[4][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[5][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[6][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[7][10:0]' into 'g_d9b88f41[3].u_1ace7546/g_e3edcabb[0].s_aeca7c1d_reg[0][10:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:624]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_ba34f6ef.u_9f6081d9/g_1d351732.s_a4b0d62b_reg' into 'g_d9b88f41[1].u_1ace7546/g_ba34f6ef.u_9f6081d9/g_1d351732.s_a4b0d62b_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9015]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[0].g_d865fc1f.s_e31097f7_reg[0][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[0].g_d865fc1f.s_e31097f7_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9260]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[1].g_0f8b8490.s_e31097f7_reg[1][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[1].g_0f8b8490.s_e31097f7_reg[1][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[2].g_0f8b8490.s_e31097f7_reg[2][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[2].g_0f8b8490.s_e31097f7_reg[2][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[3].g_0f8b8490.s_e31097f7_reg[3][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[3].g_0f8b8490.s_e31097f7_reg[3][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[2].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[4].g_0f8b8490.s_e31097f7_reg[4][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[4].g_0f8b8490.s_e31097f7_reg[4][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_ba34f6ef.u_9f6081d9/g_1d351732.s_a4b0d62b_reg' into 'g_d9b88f41[1].u_1ace7546/g_ba34f6ef.u_9f6081d9/g_1d351732.s_a4b0d62b_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9015]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[0].g_d865fc1f.s_e31097f7_reg[0][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[0].g_d865fc1f.s_e31097f7_reg[0][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9260]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[1].g_0f8b8490.s_e31097f7_reg[1][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[1].g_0f8b8490.s_e31097f7_reg[1][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[2].g_0f8b8490.s_e31097f7_reg[2][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[2].g_0f8b8490.s_e31097f7_reg[2][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[3].g_0f8b8490.s_e31097f7_reg[3][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[3].g_0f8b8490.s_e31097f7_reg[3][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+INFO: [Synth 8-4471] merging register 'g_d9b88f41[3].u_1ace7546/g_c5449967.g_1ab35cb8[1].u_dbb243ff/g_0ddfaf2e[4].g_0f8b8490.s_e31097f7_reg[4][2:0]' into 'g_d9b88f41[1].u_1ace7546/g_c5449967.g_1ab35cb8[4].u_dbb243ff/g_0ddfaf2e[4].g_0f8b8490.s_e31097f7_reg[4][2:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9267]
+WARNING: [Synth 8-3936] Found unconnected internal register 'g_d9b88f41[1].u_1ace7546/g_ba34f6ef.u_9f6081d9/g_1d351732.s_30bd8878_reg' and it is trimmed from '64' to '62' bits. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9025]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_756b52a2/\g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_756b52a2/\g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_756b52a2/\g_d9b88f41[2].u_1ace7546/g_4b99ad80[0].g_6985081c.s_8f1b52ad_reg[0][0] )
+WARNING: [Synth 8-3936] Found unconnected internal register 'u_e3e817e9/s_97a04115_reg' and it is trimmed from '5' to '4' bits. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:24818]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_892e83c7/s_68beb7c00_inferred/\s_68beb7c0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_e3e817e9/s_a6c129f10_inferred /\u_e3e817e9/s_a6c129f1_reg[0] )
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[0].u_a05ffc7d/g_10cbe08c.srl_reg[0:0]' into 'g_306cb058[0].g_2fad7a3e[0].u_a05ffc7d/g_10cbe08c.srl_reg[0:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:9326]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Synth 8-4471] merging register 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].s_068e8d4e_reg[35:0]' into 'g_306cb058[1].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].u_773d3702/g_10cbe08c.srl_reg[35:0]' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:12706]
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'u_407c0682/u_3616afaa/s_6f7126c6_reg' into 'u_12f9597e/s_42ee598c_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:14533]
+WARNING: [Synth 8-6014] Unused sequential element g_015af206[0].u_c8dde879/u_7fa3a1b8/u_bba05915/s_f5bc20bd_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_77a48684_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_c8ebdbaf_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_035bcc40[0].s_5ca5f008_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_c2b5a68b_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_c081a793_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_c081a793_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_bac858c7_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c10_inferred /\g_015af206[0].u_c8dde879/u_38ac4064/s_e717c0c1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_12f2326e_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_407c0682/u_a54b0d8d /\u_448398e4/g_8a54cd37[0].s_037895a0_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_e55dbdc7_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_ead9cc9d_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_8e46f25d_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_12f9597e/s_730c9aac_reg[3] )
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[0].g_05409232[1].u_75361702/s_9184abb3_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9184abb3_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21179]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[0].g_05409232[1].u_75361702/s_9d247dc1_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9d247dc1_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21189]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[1].g_05409232[0].u_75361702/s_9184abb3_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9184abb3_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21179]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[1].g_05409232[0].u_75361702/s_9d247dc1_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9d247dc1_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21189]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[1].g_05409232[1].u_75361702/s_9184abb3_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9184abb3_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21179]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[1].g_05409232[1].u_75361702/s_9d247dc1_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9d247dc1_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21189]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[2].g_05409232[0].u_75361702/s_9184abb3_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9184abb3_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21179]
+INFO: [Synth 8-4471] merging register 'g_5fd2c014[2].g_05409232[0].u_75361702/s_9d247dc1_reg' into 'g_5fd2c014[0].g_05409232[0].u_75361702/s_9d247dc1_reg' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ipshared/6dbc/hdl/DPUCZDX8G_v3_4_0_vl_dpu.sv:21189]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_8b40922f/s_ceed8453_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_8b40922f/s_ceed8453_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\u_edbdbfed/g_035bcc40[0].s_5ca5f008_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_8b40922f/s_f96c5381_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[384] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[385] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[386] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[387] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[388] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[389] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[390] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[391] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[392] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[393] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[394] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[395] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[396] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[397] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[398] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[399] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[400] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[401] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[402] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[403] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[404] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[405] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[406] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[407] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[408] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[409] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[410] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[411] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[412] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[413] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[414] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[415] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[416] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[417] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[418] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[419] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[420] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[421] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[422] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_rd_pool_img/\s_fb859389_reg[423] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "sub_instr_num" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-6904] The RAM "\u_d7404f79/u_71f6fd84 /u_db8c5b29/s_4aff7124_reg" of size (depth=16 x width=4) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\u_d7404f79/u_71f6fd84 /u_db8c5b29/s_4aff7124_reg" of size (depth=16 x width=4) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:59 ; elapsed = 00:03:30 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 2190 ; free virtual = 4553
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:11 ; elapsed = 00:03:44 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 1523 ; free virtual = 3981
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:18 ; elapsed = 00:03:51 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 1502 ; free virtual = 3961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/u_09bd46fci_17/u_da96ba23/u_cb0b8eb9/u_bba05915/s_f5bc20bd_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/u_09bd46fci_17/u_da96ba23/u_cb0b8eb9/u_bba05915/s_f5bc20bd_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:35 ; elapsed = 00:04:14 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 284 ; free virtual = 1607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_da96ba23/u_cb0b8eb9/u_bba05915/s_f5bc20bd_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:56 ; elapsed = 00:04:36 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 302 ; free virtual = 1570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:57 ; elapsed = 00:04:36 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 302 ; free virtual = 1570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:19 ; elapsed = 00:04:59 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 172 ; free virtual = 1495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:20 ; elapsed = 00:05:00 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 172 ; free virtual = 1496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:22 ; elapsed = 00:05:02 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 191 ; free virtual = 1510
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:23 ; elapsed = 00:05:03 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 189 ; free virtual = 1508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |  1593|
+|2     |DSP_ALU         |   326|
+|5     |DSP_A_B_DATA    |   326|
+|7     |DSP_C_DATA      |   326|
+|9     |DSP_MULTIPLIER  |   326|
+|12    |DSP_M_DATA      |   326|
+|14    |DSP_OUTPUT      |   326|
+|16    |DSP_PREADD      |   326|
+|17    |DSP_PREADD_DATA |   326|
+|20    |LUT1            |   872|
+|21    |LUT2            |  5381|
+|22    |LUT3            | 12885|
+|23    |LUT4            |  8526|
+|24    |LUT5            |  7843|
+|25    |LUT6            | 17883|
+|26    |MUXF7           |  2027|
+|27    |MUXF8           |     2|
+|28    |RAM32M          |    12|
+|29    |RAM32M16        |   104|
+|30    |RAM32X1D        |     5|
+|31    |RAM64M8         |    87|
+|32    |RAM64X1D        |     2|
+|33    |RAMB18E2        |    38|
+|34    |RAMB36E2        |   192|
+|39    |SRL16E          |  3037|
+|40    |FDRE            | 76777|
+|41    |FDSE            |   652|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:24 ; elapsed = 00:05:04 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 189 ; free virtual = 1508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2531 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:57 ; elapsed = 00:04:40 . Memory (MB): peak = 4336.523 ; gain = 658.164 ; free physical = 9215 ; free virtual = 10550
+Synthesis Optimization Complete : Time (s): cpu = 00:04:34 ; elapsed = 00:05:08 . Memory (MB): peak = 4336.523 ; gain = 1452.117 ; free physical = 9244 ; free virtual = 10550
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4336.523 ; gain = 0.000 ; free physical = 9069 ; free virtual = 10379
+INFO: [Netlist 29-17] Analyzing 4158 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4553.590 ; gain = 0.000 ; free physical = 8869 ; free virtual = 10183
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 536 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 326 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 104 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 87 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2 instances
+
+Synth Design complete, checksum: 31dfd5ba
+INFO: [Common 17-83] Releasing license: Synthesis
+562 Infos, 210 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:11 ; elapsed = 00:05:45 . Memory (MB): peak = 4553.590 ; gain = 1696.184 ; free physical = 9216 ; free virtual = 10531
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/design_1_dpuczdx8g_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 4585.605 ; gain = 32.016 ; free physical = 8875 ; free virtual = 10530
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 2049 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_dpuczdx8g_0_0_synth_1/design_1_dpuczdx8g_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 4585.605 ; gain = 0.000 ; free physical = 8860 ; free virtual = 10523
+INFO: [runtcl-4] Executing : report_utilization -file design_1_dpuczdx8g_0_0_utilization_synth.rpt -pb design_1_dpuczdx8g_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 17:52:27 2022...

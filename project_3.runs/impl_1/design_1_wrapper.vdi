@@ -1,0 +1,950 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Sun May  1 17:53:26 2022
+# Process ID: 21056
+# Current directory: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/vivado.jou
+# Running On: h, OS: Linux, CPU Frequency: 2000.000 MHz, CPU Physical cores: 4, Host memory: 16672 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/y/ultra96/dpu/Vitis-AI'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:ISPPipeline_accel:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:hdmi_acr_ctrl:1.1'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:dpu_top:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u55c_xo_withdwc/DPUCAHX8H_SRC/DPU' will take precedence over the same IP in locations: 
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo_withdwc/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo_withdwc/DPUCAHX8H_SRC/DPU
+Command: link_design -top design_1_wrapper -part xczu3eg-sbva484-1-i
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Project 1-454] Reading design checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.dcp' for cell 'design_1_i/dpuczdx8g_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0.dcp' for cell 'design_1_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0.dcp' for cell 'design_1_i/proc_sys_reset_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.dcp' for cell 'design_1_i/zynq_ultra_ps_e_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2967.469 ; gain = 0.000 ; free physical = 9350 ; free virtual = 11591
+INFO: [Netlist 29-17] Analyzing 4160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:48 ; elapsed = 00:00:10 . Memory (MB): peak = 4359.918 ; gain = 638.211 ; free physical = 8004 ; free virtual = 10353
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0_board.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0_board.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0.xdc] for cell 'design_1_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0_board.xdc] for cell 'design_1_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0_board.xdc] for cell 'design_1_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0.xdc] for cell 'design_1_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0.xdc] for cell 'design_1_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc] for cell 'design_1_i/dpuczdx8g_0/inst'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc] for cell 'design_1_i/dpuczdx8g_0/inst'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0_impl.xdc] for cell 'design_1_i/dpuczdx8g_0/inst'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0_impl.xdc] for cell 'design_1_i/dpuczdx8g_0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4471.973 ; gain = 0.000 ; free physical = 8274 ; free virtual = 10655
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 536 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 326 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 104 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 87 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2 instances
+
+18 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:37 ; elapsed = 00:00:55 . Memory (MB): peak = 4471.973 ; gain = 1609.598 ; free physical = 8274 ; free virtual = 10656
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4471.973 ; gain = 0.000 ; free physical = 8269 ; free virtual = 10643
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 7dc6429e
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:08 . Memory (MB): peak = 4471.973 ; gain = 0.000 ; free physical = 8022 ; free virtual = 10392
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[0].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__5 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[0].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__5, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[10].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__15 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[10].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__15, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[11].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__16 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[11].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__16, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[1].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__6 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[1].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__6, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[2].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__7 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[2].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__7, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[3].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__8 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[3].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__8, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[4].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__9 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[4].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__9, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[5].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__10 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[5].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__10, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[6].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__11 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[6].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__11, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[7].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__12 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[7].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__12, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[8].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__13 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[8].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__13, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[9].u_29e16250/g_4713fa10.s_7a968060[6]_i_1__14 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/g_d23e134f[9].u_29e16250/g_4713fa10.s_7a968060[7]_i_4__14, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[0].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[0].s_9f59eaa9[0]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[0].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[0].s_9f59eaa9[0]_i_2, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[0].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[0].s_9f59eaa9[1]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[0].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[0].s_9f59eaa9[1]_i_2, which resulted in an inversion of 36 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[0].u_1d559690/u_bba05915/g_296cb0f2[0].s_3b9c538c[9]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[0].u_1d559690/u_bba05915/g_296cb0f2[0].s_3b9c538c[9]_i_3, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[1].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[1].s_9f59eaa9[0]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[1].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[1].s_9f59eaa9[0]_i_2, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[1].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[1].s_9f59eaa9[1]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_1ac255f8/g_296cb0f2[1].u_1d559690/u_bba05915/FSM_sequential_g_296cb0f2[1].s_9f59eaa9[1]_i_2, which resulted in an inversion of 36 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_d8fbea9d/g_3857df34[0].s_71cc2820[0]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_d8fbea9d/g_3857df34[0].s_71cc2820[0]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_d8fbea9d/g_3857df34[1].s_71cc2820[1]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_d8fbea9d/g_3857df34[1].s_71cc2820[1]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/s_d1aad10b[15]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_ba34f6ef.u_9f6081d9/s_d1aad10b[15]_i_2, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/s_d1aad10b[23]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_ba34f6ef.u_9f6081d9/s_d1aad10b[23]_i_3, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/s_d1aad10b[7]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_910b7ad5/u_756b52a2/g_d9b88f41[3].u_1ace7546/g_ba34f6ef.u_9f6081d9/s_d1aad10b[7]_i_2, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_d7404f79/u_71f6fd84/u_db8c5b29/s_937e4117[2]_i_1 into driver instance design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_d7404f79/u_71f6fd84/u_db8c5b29/s_937e4117[2]_i_2, which resulted in an inversion of 8 pins
+INFO: [Opt 31-138] Pushed 130 inverter(s) to 3872 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: d47222df
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 8042 ; free virtual = 10416
+INFO: [Opt 31-389] Phase Retarget created 103 cells and removed 656 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: c9520bfa
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 8043 ; free virtual = 10416
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 15c6d45f8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 7938 ; free virtual = 10387
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1089 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 1961bc9e2
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 7917 ; free virtual = 10378
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 11d877c7e
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 7917 ; free virtual = 10378
+INFO: [Opt 31-389] Phase Shift Register Optimization created 2 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 153391164
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 7917 ; free virtual = 10376
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             103  |             656  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              1  |
+|  Sweep                        |               0  |            1089  |                                              1  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               2  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.26 . Memory (MB): peak = 4573.004 ; gain = 0.000 ; free physical = 7918 ; free virtual = 10379
+Ending Logic Optimization Task | Checksum: 5d78266b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 4573.004 ; gain = 36.070 ; free physical = 7918 ; free virtual = 10379
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 230 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 152 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 182 Total Ports: 460
+Ending PowerOpt Patch Enables Task | Checksum: 16b21d010
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5609.742 ; gain = 0.000 ; free physical = 7645 ; free virtual = 10155
+Ending Power Optimization Task | Checksum: 16b21d010
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:30 . Memory (MB): peak = 5609.742 ; gain = 1036.738 ; free physical = 7778 ; free virtual = 10288
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 16b21d010
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5609.742 ; gain = 0.000 ; free physical = 7778 ; free virtual = 10288
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 5609.742 ; gain = 0.000 ; free physical = 7778 ; free virtual = 10288
+Ending Netlist Obfuscation Task | Checksum: f002eef8
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 5609.742 ; gain = 0.000 ; free physical = 7778 ; free virtual = 10288
+INFO: [Common 17-83] Releasing license: Implementation
+68 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:03:00 ; elapsed = 00:00:59 . Memory (MB): peak = 5609.742 ; gain = 1137.770 ; free physical = 7778 ; free virtual = 10288
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:14 ; elapsed = 00:00:28 . Memory (MB): peak = 5609.742 ; gain = 0.000 ; free physical = 7498 ; free virtual = 10045
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:14 ; elapsed = 00:00:26 . Memory (MB): peak = 5717.086 ; gain = 107.344 ; free physical = 6823 ; free virtual = 9493
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5717.086 ; gain = 0.000 ; free physical = 6822 ; free virtual = 9493
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cd2a7911
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5717.086 ; gain = 0.000 ; free physical = 6822 ; free virtual = 9493
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5717.086 ; gain = 0.000 ; free physical = 6822 ; free virtual = 9493
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 617ba212
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 5717.086 ; gain = 0.000 ; free physical = 6889 ; free virtual = 9575
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 11abf177a
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:34 . Memory (MB): peak = 5792.773 ; gain = 75.688 ; free physical = 6686 ; free virtual = 9374
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11abf177a
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:35 . Memory (MB): peak = 5792.773 ; gain = 75.688 ; free physical = 6684 ; free virtual = 9372
+Phase 1 Placer Initialization | Checksum: 11abf177a
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:35 . Memory (MB): peak = 5792.773 ; gain = 75.688 ; free physical = 6676 ; free virtual = 9368
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 126cbf5a7
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:14 . Memory (MB): peak = 5872.812 ; gain = 155.727 ; free physical = 6511 ; free virtual = 9256
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1378ead49
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:01:17 . Memory (MB): peak = 5872.812 ; gain = 155.727 ; free physical = 6493 ; free virtual = 9240
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 13d9f8a0f
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:01:18 . Memory (MB): peak = 5872.812 ; gain = 155.727 ; free physical = 6507 ; free virtual = 9239
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 13d9f8a0f
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:19 . Memory (MB): peak = 5917.176 ; gain = 200.090 ; free physical = 6438 ; free virtual = 9223
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 194ed7071
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:22 . Memory (MB): peak = 5917.176 ; gain = 200.090 ; free physical = 6405 ; free virtual = 9190
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1ec9603ac
+
+Time (s): cpu = 00:03:22 ; elapsed = 00:01:28 . Memory (MB): peak = 5949.191 ; gain = 232.105 ; free physical = 6391 ; free virtual = 9175
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1ec9603ac
+
+Time (s): cpu = 00:03:23 ; elapsed = 00:01:28 . Memory (MB): peak = 5949.191 ; gain = 232.105 ; free physical = 6391 ; free virtual = 9174
+Phase 2.1.1 Partition Driven Placement | Checksum: 1ec9603ac
+
+Time (s): cpu = 00:03:23 ; elapsed = 00:01:28 . Memory (MB): peak = 5949.191 ; gain = 232.105 ; free physical = 6405 ; free virtual = 9189
+Phase 2.1 Floorplanning | Checksum: 1ec9603ac
+
+Time (s): cpu = 00:03:23 ; elapsed = 00:01:28 . Memory (MB): peak = 5949.191 ; gain = 232.105 ; free physical = 6405 ; free virtual = 9189
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1ec9603ac
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:01:29 . Memory (MB): peak = 5949.191 ; gain = 232.105 ; free physical = 6405 ; free virtual = 9189
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1ec9603ac
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:01:29 . Memory (MB): peak = 5949.191 ; gain = 232.105 ; free physical = 6405 ; free virtual = 9189
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1434 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 571 nets or LUTs. Breaked 0 LUT, combined 571 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 217 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6413 ; free virtual = 9194
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            571  |                   571  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            571  |                   571  |           0  |           5  |  00:00:03  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 15f2a1a3d
+
+Time (s): cpu = 00:06:17 ; elapsed = 00:02:46 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6412 ; free virtual = 9193
+Phase 2.4 Global Placement Core | Checksum: 9923adea
+
+Time (s): cpu = 00:06:27 ; elapsed = 00:02:51 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6403 ; free virtual = 9184
+Phase 2 Global Placement | Checksum: 9923adea
+
+Time (s): cpu = 00:06:27 ; elapsed = 00:02:51 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6452 ; free virtual = 9233
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: b15fd95f
+
+Time (s): cpu = 00:06:40 ; elapsed = 00:02:57 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6434 ; free virtual = 9216
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f31bc0dc
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:03:03 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6436 ; free virtual = 9218
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: f5a101c4
+
+Time (s): cpu = 00:07:03 ; elapsed = 00:03:08 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6378 ; free virtual = 9161
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 11febb51f
+
+Time (s): cpu = 00:07:04 ; elapsed = 00:03:09 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6377 ; free virtual = 9160
+
+Phase 3.3.3 Slice Area Swap
+Phase 3.3.3 Slice Area Swap | Checksum: 1c9faa6f5
+
+Time (s): cpu = 00:07:13 ; elapsed = 00:03:15 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6349 ; free virtual = 9131
+Phase 3.3 Small Shape DP | Checksum: 15f0a782d
+
+Time (s): cpu = 00:07:35 ; elapsed = 00:03:22 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6356 ; free virtual = 9139
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 23cc23fda
+
+Time (s): cpu = 00:07:39 ; elapsed = 00:03:27 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6362 ; free virtual = 9144
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 110299a88
+
+Time (s): cpu = 00:07:41 ; elapsed = 00:03:29 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6362 ; free virtual = 9144
+Phase 3 Detail Placement | Checksum: 110299a88
+
+Time (s): cpu = 00:07:42 ; elapsed = 00:03:30 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6362 ; free virtual = 9144
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 184f40014
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.656 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 11724ac86
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6317 ; free virtual = 9100
+INFO: [Place 46-35] Processed net design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/s_969b7a19, inserted BUFG to drive 1680 loads.
+INFO: [Place 46-45] Replicated bufg driver design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/s_969b7a19_reg_replica
+INFO: [Place 46-35] Processed net design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/s_b02b02b3, inserted BUFG to drive 1249 loads.
+INFO: [Place 46-45] Replicated bufg driver design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/s_b02b02b3_reg_replica
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 2, Replicated BUFG Driver: 2, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 94f96f81
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:05 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6312 ; free virtual = 9096
+Phase 4.1.1.1 BUFG Insertion | Checksum: b53dae95
+
+Time (s): cpu = 00:10:01 ; elapsed = 00:04:04 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6316 ; free virtual = 9099
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.182. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 62ddab44
+
+Time (s): cpu = 00:10:03 ; elapsed = 00:04:06 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6315 ; free virtual = 9099
+
+Time (s): cpu = 00:10:03 ; elapsed = 00:04:06 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6315 ; free virtual = 9099
+Phase 4.1 Post Commit Optimization | Checksum: 62ddab44
+
+Time (s): cpu = 00:10:04 ; elapsed = 00:04:07 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6315 ; free virtual = 9099
+Netlist sorting complete. Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6307 ; free virtual = 9091
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 15049ab21
+
+Time (s): cpu = 00:10:10 ; elapsed = 00:04:11 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6262 ; free virtual = 9055
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|              16x16|              16x16|              32x32|
+|___________|___________________|___________________|___________________|
+|      South|                2x2|              16x16|              32x32|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|              16x16|
+|___________|___________________|___________________|___________________|
+|       West|              16x16|                1x1|              16x16|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 15049ab21
+
+Time (s): cpu = 00:10:11 ; elapsed = 00:04:13 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6271 ; free virtual = 9064
+Phase 4.3 Placer Reporting | Checksum: 15049ab21
+
+Time (s): cpu = 00:10:12 ; elapsed = 00:04:13 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6271 ; free virtual = 9064
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6272 ; free virtual = 9066
+
+Time (s): cpu = 00:10:12 ; elapsed = 00:04:14 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6272 ; free virtual = 9066
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 200d65e19
+
+Time (s): cpu = 00:10:13 ; elapsed = 00:04:14 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6271 ; free virtual = 9065
+Ending Placer Task | Checksum: 1cc1a27df
+
+Time (s): cpu = 00:10:13 ; elapsed = 00:04:14 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6271 ; free virtual = 9065
+INFO: [Common 17-83] Releasing license: Implementation
+110 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:10:21 ; elapsed = 00:04:18 . Memory (MB): peak = 5956.219 ; gain = 239.133 ; free physical = 6459 ; free virtual = 9252
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6119 ; free virtual = 9176
+report_design_analysis: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6176 ; free virtual = 9241
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:48 ; elapsed = 00:00:29 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6411 ; free virtual = 9255
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.26 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6396 ; free virtual = 9239
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.53 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6408 ; free virtual = 9252
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+119 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:18 ; elapsed = 00:00:17 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6330 ; free virtual = 9176
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:17 ; elapsed = 00:00:05 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 5984 ; free virtual = 9094
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:36 ; elapsed = 00:00:22 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6237 ; free virtual = 9141
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 12ba8f89 ConstDB: 0 ShapeSum: cbf39879 RouteDB: ed6bffdd
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.37 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6134 ; free virtual = 9041
+Post Restoration Checksum: NetGraph: c588d0e4 NumContArr: 4ecfea2c Constraints: b695c6f6 Timing: 0
+Phase 1 Build RT Design | Checksum: 1caee8206
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:18 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6163 ; free virtual = 9072
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1caee8206
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:19 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6105 ; free virtual = 9014
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1caee8206
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:20 . Memory (MB): peak = 5956.219 ; gain = 0.000 ; free physical = 6104 ; free virtual = 9013
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 121dc3aba
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:22 . Memory (MB): peak = 5957.223 ; gain = 1.004 ; free physical = 6087 ; free virtual = 8996
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1f16516b3
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:00:36 . Memory (MB): peak = 5957.223 ; gain = 1.004 ; free physical = 6026 ; free virtual = 8936
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.213  | TNS=0.000  | WHS=-0.389 | THS=-1214.089|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 118908
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 108541
+  Number of Partially Routed Nets     = 10367
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1d2cb2d94
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:03 . Memory (MB): peak = 5992.207 ; gain = 35.988 ; free physical = 6004 ; free virtual = 8911
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1d2cb2d94
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:03 . Memory (MB): peak = 5992.207 ; gain = 35.988 ; free physical = 6004 ; free virtual = 8910
+Phase 3 Initial Routing | Checksum: 1b63ccb5c
+
+Time (s): cpu = 00:05:01 ; elapsed = 00:01:17 . Memory (MB): peak = 6064.223 ; gain = 108.004 ; free physical = 5974 ; free virtual = 8881
+
+INFO: [Route 35-449] Initial Estimated Congestion
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+|           |___________________|___________________|___________________|
+| Direction | Size   | % Tiles  | Size   | % Tiles  | Size   | % Tiles  |
+|___________|________|__________|________|__________|________|__________|
+|      NORTH|     8x8|      3.01|     8x8|      6.94|     4x4|      4.51|
+|___________|________|__________|________|__________|________|__________|
+|      SOUTH|     8x8|      4.19|   16x16|     10.77|     8x8|      6.28|
+|___________|________|__________|________|__________|________|__________|
+|       EAST|     8x8|      2.12|     2x2|      1.06|   16x16|     12.95|
+|___________|________|__________|________|__________|________|__________|
+|       WEST|     4x4|      0.99|     2x2|      0.52|   16x16|     12.12|
+|___________|________|__________|________|__________|________|__________|
+Congestion Report
+LONG Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+SOUTH
+	INT_X17Y111->INT_X24Y142 (CLEL_L_X17Y111->INT_X24Y142)
+	INT_X16Y124->INT_X23Y131 (CLEM_X16Y124->CLEL_R_X23Y131)
+	INT_X16Y123->INT_X23Y130 (CLEM_X16Y123->CLEL_R_X23Y130)
+	INT_X16Y113->INT_X23Y120 (CLEM_X16Y113->CLEL_R_X23Y120)
+	INT_X16Y112->INT_X23Y119 (CLEM_X16Y112->CLEL_R_X23Y119)
+SHORT Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+EAST
+	INT_X16Y131->INT_X31Y146 (CLEM_X16Y131->CLEL_R_X31Y146)
+	INT_X16Y130->INT_X31Y145 (CLEM_X16Y130->CLEL_R_X31Y145)
+	INT_X17Y131->INT_X32Y146 (CLEL_L_X17Y131->CMT_RIGHT_X32Y120)
+	INT_X17Y130->INT_X32Y145 (CLEL_L_X17Y130->CMT_RIGHT_X32Y120)
+WEST
+	INT_X13Y153->INT_X20Y176 (CLEM_X13Y153->CLEL_R_X20Y176)
+	INT_X16Y164->INT_X23Y171 (CLEM_X16Y164->CLEL_R_X23Y171)
+	INT_X24Y140->INT_X31Y147 (CLEM_X24Y140->CLEL_R_X31Y147)
+	INT_X24Y132->INT_X31Y139 (CLEM_X24Y132->CLEL_R_X31Y139)
+	INT_X16Y163->INT_X23Y170 (CLEM_X16Y163->CLEL_R_X23Y170)
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 42265
+ Number of Nodes with overlaps = 6305
+ Number of Nodes with overlaps = 865
+ Number of Nodes with overlaps = 153
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.896  | TNS=0.000  | WHS=-0.033 | THS=-2.405 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 266365858
+
+Time (s): cpu = 00:16:05 ; elapsed = 00:04:25 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5760 ; free virtual = 8847
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.896  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1b28c63d9
+
+Time (s): cpu = 00:16:38 ; elapsed = 00:04:40 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5768 ; free virtual = 8852
+Phase 4 Rip-up And Reroute | Checksum: 1b28c63d9
+
+Time (s): cpu = 00:16:39 ; elapsed = 00:04:41 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5770 ; free virtual = 8851
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2227b3b6e
+
+Time (s): cpu = 00:17:22 ; elapsed = 00:04:53 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5789 ; free virtual = 8844
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.896  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 2227b3b6e
+
+Time (s): cpu = 00:17:23 ; elapsed = 00:04:54 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5794 ; free virtual = 8848
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2227b3b6e
+
+Time (s): cpu = 00:17:23 ; elapsed = 00:04:54 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5794 ; free virtual = 8849
+Phase 5 Delay and Skew Optimization | Checksum: 2227b3b6e
+
+Time (s): cpu = 00:17:24 ; elapsed = 00:04:55 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5794 ; free virtual = 8848
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1dc1ee26f
+
+Time (s): cpu = 00:17:59 ; elapsed = 00:05:04 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5771 ; free virtual = 8851
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.896  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1b7e8d65b
+
+Time (s): cpu = 00:18:00 ; elapsed = 00:05:05 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5761 ; free virtual = 8849
+Phase 6 Post Hold Fix | Checksum: 1b7e8d65b
+
+Time (s): cpu = 00:18:00 ; elapsed = 00:05:06 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5761 ; free virtual = 8850
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 44.71 %
+  Global Horizontal Routing Utilization  = 45.9808 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 28174ff0e
+
+Time (s): cpu = 00:18:02 ; elapsed = 00:05:07 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5759 ; free virtual = 8847
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 28174ff0e
+
+Time (s): cpu = 00:18:03 ; elapsed = 00:05:07 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5758 ; free virtual = 8843
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 28174ff0e
+
+Time (s): cpu = 00:18:12 ; elapsed = 00:05:14 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5680 ; free virtual = 8851
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 28174ff0e
+
+Time (s): cpu = 00:18:14 ; elapsed = 00:05:15 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5739 ; free virtual = 8856
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.896  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 28174ff0e
+
+Time (s): cpu = 00:18:35 ; elapsed = 00:05:19 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5746 ; free virtual = 8855
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:18:35 ; elapsed = 00:05:19 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5848 ; free virtual = 8958
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+136 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:19:16 ; elapsed = 00:05:30 . Memory (MB): peak = 6128.254 ; gain = 172.035 ; free physical = 5849 ; free virtual = 8959
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 6128.254 ; gain = 0.000 ; free physical = 5464 ; free virtual = 8887
+report_design_analysis: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 6128.254 ; gain = 0.000 ; free physical = 5446 ; free virtual = 8887
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:01 ; elapsed = 00:00:36 . Memory (MB): peak = 6128.254 ; gain = 0.000 ; free physical = 5682 ; free virtual = 8853
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:37 ; elapsed = 00:00:19 . Memory (MB): peak = 6128.254 ; gain = 0.000 ; free physical = 5559 ; free virtual = 8743
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/y/ultra96/dpu/fpga/project_3/project_3.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:27 ; elapsed = 00:00:30 . Memory (MB): peak = 6128.254 ; gain = 0.000 ; free physical = 5541 ; free virtual = 8752
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+148 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:39 ; elapsed = 00:00:31 . Memory (MB): peak = 6149.836 ; gain = 21.582 ; free physical = 5363 ; free virtual = 8610
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 6149.836 ; gain = 0.000 ; free physical = 5312 ; free virtual = 8556
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_d8fbea9d/u_0a24e7a0/u_dsp/g_537424c2.u_dsp48e2 output design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_11f1f7fc/u_d8fbea9d/u_0a24e7a0/u_dsp/g_537424c2.u_dsp48e2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_082734fc/u_8ae57611/s_ee7921c5_reg multiplier stage design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_082734fc/u_8ae57611/s_ee7921c5_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[0].g_1bab7b70[0].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[0].g_1bab7b70[1].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[1].g_1bab7b70[0].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[1].g_1bab7b70[1].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[2].g_1bab7b70[0].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[2].g_1bab7b70[1].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[3].g_1bab7b70[0].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[3].g_1bab7b70[1].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[4].g_1bab7b70[0].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[4].g_1bab7b70[1].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[5].g_1bab7b70[0].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/g_e965d1b7[5].g_1bab7b70[1].g_97350441.u_8cd5f033/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[0].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[1].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[4].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[2].g_4da1bc06[5].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[0].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[1].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[2].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[0].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[1].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[2].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/g_306cb058[0].g_2fad7a3e[3].g_4da1bc06[3].u_ba2d1c29/g_82761c2d[3].g_bfd7a743.u_318caada/u_dsp/g_537424c2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [Common 17-14] Message 'DRC REQP-1731' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 302 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 6408.480 ; gain = 258.645 ; free physical = 5280 ; free virtual = 8508
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 18:10:05 2022...

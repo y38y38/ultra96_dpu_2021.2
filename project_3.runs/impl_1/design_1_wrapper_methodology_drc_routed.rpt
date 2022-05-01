@@ -1,0 +1,99 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2.1 (lin64) Build 3414424 Sun Dec 19 10:57:14 MST 2021
+| Date         : Sun May  1 18:08:53 2022
+| Host         : h running 64-bit Ubuntu 21.10
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-i
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 11
++-----------+------------------+------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                | Violations |
++-----------+------------------+------------------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree         | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                  | 1          |
+| TIMING-54 | Critical Warning | Scoped false path or clock group constraint between clocks | 2          |
+| TIMING-9  | Warning          | Unknown CDC Logic                                          | 1          |
+| TIMING-46 | Warning          | Multicycle path with tied CE pins                          | 2          |
+| ULMTCS-1  | Warning          | Control Sets use limits recommend reduction                | 1          |
+| CLKC-40   | Advisory         | Substitute PLLE4 for MMCME4 check                          | 1          |
+| CLKC-56   | Advisory         | MMCME4 with global clock driver has no LOC                 | 1          |
+| XDCB-6    | Advisory         | Timing constraint pointing to hierarchical pins            | 1          |
++-----------+------------------+------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock design_1_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_pl_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock design_1_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate internal pin design_1_i/clk_wiz_0/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-54#1 Critical Warning
+Scoped false path or clock group constraint between clocks  
+A scoped False Path timing constraint is set between clocks aclk_design_1_clk_wiz_0_0 and clk_pl_0 (see constraint position 10 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope. 
+Related violations: <none>
+
+TIMING-54#2 Critical Warning
+Scoped false path or clock group constraint between clocks  
+A scoped False Path timing constraint is set between clocks clk_pl_0 and aclk_design_1_clk_wiz_0_0 (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope. 
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-46#1 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/u_79b076cc/s_a6ff9657_reg/Q and design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_09bd46fc/u_9e6ea7a1/u_9ab8484f/u_549bd8e2/u_79b076cc/s_d5e73dc1_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 8 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#2 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/u_3047897e/s_a6ff9657_reg/Q and design_1_i/dpuczdx8g_0/inst/g_69639a2a.u_e7514e2b/u_1a76dde4/u_6274c5fa/u_c7f3290b/u_85184a7f/u_3047897e/s_d5e73dc1_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 8 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+ULMTCS-1#1 Warning
+Control Sets use limits recommend reduction  
+This design uses 1797 control sets (vs. available limit of 17640, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+Related violations: <none>
+
+CLKC-40#1 Advisory
+Substitute PLLE4 for MMCME4 check  
+The MMCME4 cell design_1_i/clk_wiz_0/inst/mmcme4_adv_inst has a single input clock whose source driver, UNKNOWN, is not optimally located and the MMCM has a configuration which could be accommodated by a PLL.  Consider changing the MMCM to a PLL which could align better with the input clock driver.
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell design_1_i/clk_wiz_0/inst/mmcme4_adv_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) design_1_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+XDCB-6#1 Advisory
+Timing constraint pointing to hierarchical pins  
+A timing constraint 'set_max_delay' has a single -through that points to hierarchical pins (see constraint position '9' in the Timing Constraint window in Vivado IDE). With such constraint, it is recommended to have a DONT_TOUCH or KEEP_HIERARCHY on the hierarchical module to avoid the risk of pin names changing during synthesis.
+Current XDC: /home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_dpuczdx8g_0_0/design_1_dpuczdx8g_0_0.xdc (Line: 32)
+Related violations: <none>
+
+

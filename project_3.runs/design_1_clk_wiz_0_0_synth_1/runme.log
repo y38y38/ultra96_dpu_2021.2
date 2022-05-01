@@ -1,0 +1,261 @@
+
+*** Running vivado
+    with args -log design_1_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_clk_wiz_0_0.tcl
+
+
+****** Vivado v2021.2.1 (64-bit)
+  **** SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+  **** IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_clk_wiz_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2862.375 ; gain = 2.992 ; free physical = 3509 ; free virtual = 7398
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/y/ultra96/dpu/Vitis-AI'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:ISPPipeline_accel:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:hdmi_acr_ctrl:1.1'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:dpu_top:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u55c_xo_withdwc/DPUCAHX8H_SRC/DPU' will take precedence over the same IP in locations: 
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo_withdwc/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo_withdwc/DPUCAHX8H_SRC/DPU
+Command: synth_design -top design_1_clk_wiz_0_0 -part xczu3eg-sbva484-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19419
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:39 . Memory (MB): peak = 3022.172 ; gain = 140.797 ; free physical = 793 ; free virtual = 2090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6157] synthesizing module 'MMCME4_ADV' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63903]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 12.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 12.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME4_ADV' (2#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63903]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE_DIV' [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1122]
+	Parameter BUFGCE_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE_DIV' (3#1) [/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1122]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (4#1) [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:42 . Memory (MB): peak = 3069.141 ; gain = 187.766 ; free physical = 906 ; free virtual = 2268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:43 . Memory (MB): peak = 3086.953 ; gain = 205.578 ; free physical = 1649 ; free virtual = 3022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:43 . Memory (MB): peak = 3086.953 ; gain = 205.578 ; free physical = 1649 ; free virtual = 3022
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3092.891 ; gain = 0.000 ; free physical = 3314 ; free virtual = 4692
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3186.672 ; gain = 0.000 ; free physical = 3189 ; free virtual = 4703
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/y/ultra96/dpu/fpga/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_clk_wiz_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_clk_wiz_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3186.672 ; gain = 0.000 ; free physical = 3183 ; free virtual = 4698
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3186.672 ; gain = 0.000 ; free physical = 3177 ; free virtual = 4692
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:01:01 . Memory (MB): peak = 3186.672 ; gain = 305.297 ; free physical = 2845 ; free virtual = 4600
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:01:01 . Memory (MB): peak = 3186.672 ; gain = 305.297 ; free physical = 2846 ; free virtual = 4599
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:01:01 . Memory (MB): peak = 3186.672 ; gain = 305.297 ; free physical = 2838 ; free virtual = 4596
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:01:01 . Memory (MB): peak = 3186.672 ; gain = 305.297 ; free physical = 2783 ; free virtual = 4563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:03 . Memory (MB): peak = 3186.672 ; gain = 305.297 ; free physical = 2675 ; free virtual = 4466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.117 ; gain = 708.742 ; free physical = 912 ; free virtual = 2783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.117 ; gain = 708.742 ; free physical = 911 ; free virtual = 2783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 3609.148 ; gain = 727.773 ; free physical = 908 ; free virtual = 2780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 403 ; free virtual = 2235
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 401 ; free virtual = 2233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 393 ; free virtual = 2225
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 389 ; free virtual = 2221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 384 ; free virtual = 2216
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 381 ; free virtual = 2213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFGCE_DIV |     2|
+|2     |MMCME4_ADV |     1|
+|3     |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.086 ; gain = 733.711 ; free physical = 376 ; free virtual = 2208
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:07 . Memory (MB): peak = 3615.086 ; gain = 633.992 ; free physical = 282 ; free virtual = 2114
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:18 . Memory (MB): peak = 3615.094 ; gain = 733.711 ; free physical = 277 ; free virtual = 2109
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3615.094 ; gain = 0.000 ; free physical = 245 ; free virtual = 2077
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance inst/mmcme4_adv_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3648.773 ; gain = 0.000 ; free physical = 164 ; free virtual = 1733
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Synth Design complete, checksum: fbbdef0e
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3648.773 ; gain = 786.398 ; free physical = 337 ; free virtual = 1906
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_clk_wiz_0_0, cache-ID = da95c0594aeafd32
+INFO: [Common 17-1381] The checkpoint '/home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_clk_wiz_0_0_utilization_synth.rpt -pb design_1_clk_wiz_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 17:47:20 2022...

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Sun May  1 17:47:30 2022
+# Process ID: 20095
+# Current directory: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_proc_sys_reset_1_0_synth_1
+# Command line: vivado -log design_1_proc_sys_reset_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_proc_sys_reset_1_0.tcl
+# Log file: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_proc_sys_reset_1_0_synth_1/design_1_proc_sys_reset_1_0.vds
+# Journal file: /home/y/ultra96/dpu/fpga/project_3/project_3.runs/design_1_proc_sys_reset_1_0_synth_1/vivado.jou
+# Running On: h, OS: Linux, CPU Frequency: 2000.000 MHz, CPU Physical cores: 4, Host memory: 16672 MB
+#-----------------------------------------------------------
+source design_1_proc_sys_reset_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/y/ultra96/dpu/Vitis-AI'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:ISPPipeline_accel:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/isppipeline_accel
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:hdmi_acr_ctrl:1.1'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/resnet50/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl' will take precedence over the same IP in location /home/y/ultra96/dpu/Vitis-AI/Whole-App-Acceleration/apps/adas_detection/build_flow/DPUCVDX8G_vck190/vck190_platform/hw/source/ip/hdmi_acr_ctrl
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:dpu_top:1.0'. The one found in IP location '/home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u55c_xo_withdwc/DPUCAHX8H_SRC/DPU' will take precedence over the same IP in locations: 
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u280_xo_withdwc/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50_xo/DPUCAHX8H_SRC/DPU
+   /home/y/ultra96/dpu/Vitis-AI/dsa/DPUCAHX8H-XO/release_u50lv_xo_withdwc/DPUCAHX8H_SRC/DPU
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_proc_sys_reset_1_0, cache-ID = 6295e0937f2afa52.
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 17:47:47 2022...
